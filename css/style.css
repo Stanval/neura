@@ -51,4 +51,37 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+body {
+  font-size: 100%; }
+
+h1, h2, h3 {
+  font-family: "Open Sans Condensed", sans-serif; }
+
+h1, h2 {
+  font-weight: bold; }
+
+h1 {
+  font-size: 130%; }
+
+h2 {
+  font-size: 100%; }
+
+h4, h5, h6, p {
+  font-family: "Open Sans", sans-serif; }
+
+h4 {
+  font-size: 68%; }
+
+h5 {
+  font-weight: 600;
+  font-size: 52%; }
+
+h6 {
+  font-weight: bold;
+  font-size: 54%; }
+
+p {
+  font-weight: 600;
+  font-size: 48%; }
+
 /*# sourceMappingURL=style.css.map */
