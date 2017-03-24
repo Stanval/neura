@@ -175,6 +175,37 @@ section {
       width: 38%;
       text-align: left; }
 
+#fourth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #fourth #face {
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px; }
+  #fourth p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #222222;
+    margin-bottom: 10px; }
+  #fourth img {
+    display: block;
+    width: 100px;
+    margin-bottom: 30px; }
+  #fourth q {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #222222;
+    font-style: italic;
+    margin-bottom: 20px; }
+
 #fifth {
   background-color: #f6f6f6; }
 

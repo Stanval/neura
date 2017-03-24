@@ -128,6 +128,32 @@ section {
 	}
 }
 
+#fourth {
+	@include flex(column, center, center);
+	#face {
+		display: block;
+		border-radius: 50%;
+		width: 100px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	p {
+		@include font($main-font, 1.6em, 600, 1.5, $dark-font);
+		margin-bottom: 10px;
+	}
+	img {
+		display: block;
+		width: 100px;
+		margin-bottom: 30px;
+	}
+	q {
+		@include font($main-font, 1.6em, 600, 1.5, $dark-font);
+		font-style: italic;
+		margin-bottom: 20px;
+	}
+
+}
+
 #fifth {
 	background-color: $light-grey;
 }
