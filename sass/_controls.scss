@@ -1,8 +1,7 @@
 .email {
-	border-bottom: 2px solid $accent-color;
-	border-top: none;
-	border-left: none;
-	border-right: none;
+	border-width: 0px 0px 1px 0px;
+	border-color: $accent-color;
+	border-style: solid;
 	text-align: center;
 	margin-bottom: 28px;
 	height: 35px;

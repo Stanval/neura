@@ -1,0 +1,20 @@
+@mixin flex($direction, $main-align, $secondary-align) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $main-align;
+	align-items: $secondary-align;
+}
+
+@mixin font($family, $size, $weight, $line-height, $color) {
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $line-height;
+	color: $color;
+}
+
+@mixin flex-change($direction, $main-align, $secondary-align) {
+	flex-direction: $direction;
+	justify-content: $main-align;
+	align-items: $secondary-align;
+}

@@ -234,10 +234,9 @@ section {
     margin-bottom: 20px; }
 
 .email {
-  border-bottom: 2px solid #21b4eb;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border-width: 0px 0px 1px 0px;
+  border-color: #21b4eb;
+  border-style: solid;
   text-align: center;
   margin-bottom: 28px;
   height: 35px;
@@ -266,18 +265,36 @@ section {
     color: #21b4eb;
     background-color: #ffffff; }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1200px) {
   #first {
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: basaline;
     height: 80px;
-    margin-top: -10px; }
-    #first .button {
-      width: 200px; }
-    #first .email {
-      width: 250px;
+    background-image: url("../images/top_bg.png");
+    background-size: cover;
+    background-position: center; }
+    #first #download {
+      display: flex;
+      flex-direction: row;
+      justify-content: baseline;
+      align-items: center; }
+      #first #download .button {
+        line-height: 30px;
+        height: 30px;
+        width: 200px; }
+      #first #download .email {
+        height: 30px;
+        width: 250px;
+        margin-right: 30px;
+        margin-bottom: 0px; }
+    #first #titles {
+      align-self: center;
       text-align: left; }
+      #first #titles h1, #first #titles h2 {
+        margin: 0px; }
+      #first #titles h2 {
+        font-weight: bold; }
 
   #second {
     justify-content: center;
@@ -285,6 +302,11 @@ section {
     background-image: url("../images/hero_h.jpg");
     background-size: cover;
     background-position: center; }
+    #second #logo {
+      width: 120px; }
+      #second #logo p {
+        font-size: 1em;
+        left: 3px; }
     #second h1 {
       font-size: 3.5em; }
     #second h2 {

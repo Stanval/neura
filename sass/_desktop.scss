@@ -1,20 +1,33 @@
-@mixin flex-change($direction, $main-align, $secondary-align) {
-	flex-direction: $direction;
-	justify-content: $main-align;
-	align-items: $secondary-align;
-}
-
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 1200px){
 	#first {
-		@include flex-change(row, space-between, baseline);
+		@include flex-change(row, space-between, basaline);
 		height: 80px;
-		margin-top: -10px;
-		.button {
-			width: 200px;
+		background-image: url("../images/top_bg.png");
+		background-size: cover;
+		background-position: center;
+		#download {
+			@include flex(row, baseline, center);
+			.button {
+				line-height: 30px;
+				height: 30px;
+				width: 200px;
+			}
+			.email {
+				height: 30px;
+				width: 250px;
+				margin-right: 30px;
+				margin-bottom: 0px;
+			}
 		}
-		.email {
-			width: 250px;
+		#titles {
+			align-self: center;
 			text-align: left;
+			h1, h2 {
+				margin: 0px;
+			}
+			h2{
+				font-weight: bold;
+			}
 		}
 	}
 
@@ -24,6 +37,13 @@
 		background-image: url("../images/hero_h.jpg");
 		background-size: cover;
 		background-position: center;
+		#logo {
+			width: 120px;
+			p {
+				font-size: 1em;
+				left: 3px;
+			}
+		}
 		h1{
 			font-size: 3.5em;
 		}
