@@ -155,5 +155,6 @@ section {
 }
 
 #fifth {
+	@include flex(column, center, center);
 	background-color: $light-grey;
 }

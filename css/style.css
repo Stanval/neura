@@ -207,6 +207,10 @@ section {
     margin-bottom: 20px; }
 
 #fifth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #f6f6f6; }
 
 .email {
