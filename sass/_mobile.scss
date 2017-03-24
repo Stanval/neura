@@ -151,10 +151,21 @@ section {
 		font-style: italic;
 		margin-bottom: 20px;
 	}
-
 }
 
 #fifth {
 	@include flex(column, center, center);
 	background-color: $light-grey;
+	h1 {
+		@include font($condenced-font, 1.9em, bold, 1.2, $dark-font);
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	p {
+		@include font($main-font, 1.4em, 600, 1.3, $dark-font);
+		margin-bottom: 30px;
+	}
+	.button {
+		margin-bottom: 20px;
+	}
 }
