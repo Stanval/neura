@@ -5,7 +5,7 @@
 	border-right: none;
 	text-align: center;
 	margin-bottom: 28px;
-	height: 40px;
+	height: 35px;
 	width: 68%;
 	&:focus::-webkit-input-placeholder { 
 		color:transparent;
@@ -23,12 +23,12 @@
 
 .button {
 	font-family: $main-font;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: $light-font;
 	display: inline-block;
 	background-color: $accent-color;
-	line-height: 40px;
-	height: 40px;
+	line-height: 35px;
+	height: 35px;
 	width: 80%;
 	border: 2px solid $accent-color;
 	border-radius: 20px;

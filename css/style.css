@@ -78,7 +78,9 @@ section {
     font-size: 1.5em;
     font-weight: 400;
     line-height: inherit;
-    color: #222222; }
+    color: #222222;
+    margin-left: 20%;
+    margin-right: 20%; }
   #first h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.1em;
@@ -91,9 +93,10 @@ section {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  min-height: 500px;
+  min-height: 450px;
   position: relative;
   background-image: url("../images/hero_v.jpg");
+  background-position: center;
   background-size: cover; }
   #second #logo {
     position: absolute;
@@ -237,7 +240,7 @@ section {
   border-right: none;
   text-align: center;
   margin-bottom: 28px;
-  height: 40px;
+  height: 35px;
   width: 68%; }
   .email:focus::-webkit-input-placeholder {
     color: transparent; }
@@ -250,17 +253,96 @@ section {
 
 .button {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #ffffff;
   display: inline-block;
   background-color: #21b4eb;
-  line-height: 40px;
-  height: 40px;
+  line-height: 35px;
+  height: 35px;
   width: 80%;
   border: 2px solid #21b4eb;
   border-radius: 20px; }
   .button:hover {
     color: #21b4eb;
     background-color: #ffffff; }
+
+@media only screen and (min-width: 800px) {
+  #first {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 80px;
+    margin-top: -10px; }
+    #first .button {
+      width: 200px; }
+    #first .email {
+      width: 250px;
+      text-align: left; }
+
+  #second {
+    justify-content: center;
+    min-height: 400px;
+    background-image: url("../images/hero_h.jpg");
+    background-size: cover;
+    background-position: center; }
+    #second h1 {
+      font-size: 3.5em; }
+    #second h2 {
+      font-size: 3em;
+      margin-top: 5%;
+      margin-bottom: 0px; }
+    #second .button {
+      width: 200px; }
+
+  #third {
+    height: 820px;
+    justify-content: space-between;
+    padding-bottom: 0px; }
+    #third header h1 {
+      font-size: 2.6em; }
+    #third header p {
+      font-size: 1.5em;
+      padding-right: 10%;
+      padding-left: 10%; }
+    #third #content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 0px;
+      overflow: hidden; }
+      #third #content article {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: -150px;
+        height: 100%; }
+        #third #content article:nth-child(even) {
+          flex-direction: column;
+          margin-bottom: -100px; }
+        #third #content article + article {
+          margin-left: 20px; }
+        #third #content article .ico {
+          order: 1;
+          width: 80px;
+          margin-bottom: 20px; }
+        #third #content article .article-text {
+          order: 2;
+          text-align: center;
+          width: 200px;
+          margin-bottom: 30px; }
+        #third #content article .mob {
+          order: 3;
+          width: 250px; }
+
+  #fourth, #fifth {
+    padding-right: 25%;
+    padding-left: 25%; }
+
+  #fifth .button {
+    display: inline-block;
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

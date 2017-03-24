@@ -1,0 +1,102 @@
+@mixin flex-change($direction, $main-align, $secondary-align) {
+	flex-direction: $direction;
+	justify-content: $main-align;
+	align-items: $secondary-align;
+}
+
+@media only screen and (min-width: 800px){
+	#first {
+		@include flex-change(row, space-between, baseline);
+		height: 80px;
+		margin-top: -10px;
+		.button {
+			width: 200px;
+		}
+		.email {
+			width: 250px;
+			text-align: left;
+		}
+	}
+
+	#second {
+		justify-content: center;
+		min-height: 400px;
+		background-image: url("../images/hero_h.jpg");
+		background-size: cover;
+		background-position: center;
+		h1{
+			font-size: 3.5em;
+		}
+		h2 {
+			font-size: 3em;
+			margin-top: 5%;
+			margin-bottom: 0px;
+		}
+		.button {
+			width: 200px;
+		}
+	}
+
+	#third {
+		height: 820px;
+		justify-content: space-between;
+		padding-bottom: 0px;
+		header {
+			h1 {
+				font-size: 2.6em;
+			}
+			p {
+				font-size: 1.5em;
+				padding-right: 10%;
+				padding-left: 10%;
+			}
+		}
+		#content {
+			@include flex(row, center, flex-end);
+			margin-bottom: 0px;
+			overflow: hidden;
+			article {
+				@include flex-change(column, space-between, center);
+				margin-bottom: -150px;
+				height: 100%;
+				&:nth-child(even) {
+					flex-direction: column;
+					margin-bottom: -100px;
+				}
+				& + article {
+					margin-left: 20px;
+				}
+				.ico {
+					order: 1;
+					width: 80px;
+					margin-bottom: 20px;
+				}
+				.article-text {
+					order: 2;
+					text-align: center;
+					width: 200px;
+					margin-bottom: 30px;
+				}
+				.mob {
+					order: 3;
+					width: 250px;
+				}
+			}
+		}
+	}
+
+	#fourth, #fifth {
+		padding-right: 25%;
+		padding-left: 25%;
+	}
+
+	#fifth {
+		.button {
+			display: inline-block;
+			width: 200px;
+			margin-left: 10px;
+			margin-right:10px;
+		}
+	}
+
+}
