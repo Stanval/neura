@@ -51,37 +51,164 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+html {
+  height: 100%; }
+
 body {
-  font-size: 100%; }
+  min-width: 320px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 62.5%;
+  line-height: 1.5; }
 
-h1, h2, h3 {
-  font-family: "Open Sans Condensed", sans-serif; }
+section {
+  padding: 30px 20px; }
 
-h1, h2 {
-  font-weight: bold; }
+#first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #first h1, #first h2 {
+    margin-bottom: 10px; }
+  #first h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: inherit;
+    color: #222222; }
+  #first h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: inherit;
+    color: #222222; }
 
-h1 {
-  font-size: 130%; }
+#second {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 500px;
+  position: relative;
+  background-image: url("../images/hero_v.jpg");
+  background-size: cover; }
+  #second #logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 90px; }
+    #second #logo img {
+      width: 100%; }
+    #second #logo p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.9em;
+      font-weight: 300;
+      line-height: inherit;
+      color: #ffffff;
+      position: relative;
+      left: 7px; }
+  #second h1, #second h2 {
+    margin-bottom: 10px; }
+  #second h1 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 2.2em;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 40px; }
+  #second h2 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 2.2em;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #ffffff; }
+  #second .button {
+    margin-bottom: 20px;
+    width: 60%; }
 
-h2 {
-  font-size: 100%; }
+#third {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#02688e, #21b4eb); }
+  #third h1, #third h2, #third p {
+    margin-bottom: 10px; }
+  #third h1 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.9em;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-top: 20px; }
+  #third h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #ffffff;
+    margin-bottom: 0px; }
+  #third p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff; }
+  #third article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; }
+    #third article:nth-child(even) {
+      flex-direction: row-reverse; }
+    #third article .mob {
+      display: block;
+      width: 38%; }
+    #third article .ico {
+      display: block;
+      width: 15%; }
+    #third article .article-text {
+      width: 38%;
+      text-align: left; }
 
-h4, h5, h6, p {
-  font-family: "Open Sans", sans-serif; }
+#fifth {
+  background-color: #f6f6f6; }
 
-h4 {
-  font-size: 68%; }
+.email {
+  border-bottom: 2px solid #21b4eb;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  margin-bottom: 28px;
+  height: 40px;
+  width: 68%; }
+  .email:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .email::-webkit-input-placeholder {
+    color: #21b4eb; }
+  .email::-moz-placeholder {
+    color: #21b4eb; }
+  .email::-ms-input-placeholder {
+    color: #21b4eb; }
 
-h5 {
-  font-weight: 600;
-  font-size: 52%; }
-
-h6 {
-  font-weight: bold;
-  font-size: 54%; }
-
-p {
-  font-weight: 600;
-  font-size: 48%; }
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  color: #ffffff;
+  display: inline-block;
+  background-color: #21b4eb;
+  line-height: 40px;
+  height: 40px;
+  width: 80%;
+  border: 2px solid #21b4eb;
+  border-radius: 20px; }
+  .button:hover {
+    color: #21b4eb;
+    background-color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

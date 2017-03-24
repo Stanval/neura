@@ -1,0 +1,40 @@
+.email {
+	border-bottom: 2px solid $accent-color;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	text-align: center;
+	margin-bottom: 28px;
+	height: 40px;
+	width: 68%;
+	&:focus::-webkit-input-placeholder { 
+		color:transparent;
+	} 
+	&::-webkit-input-placeholder {
+  	color: $accent-color;
+	}
+	&::-moz-placeholder {
+		color: $accent-color;
+	}
+	&::-ms-input-placeholder {
+		color: $accent-color;
+	}
+}
+
+.button {
+	font-family: $main-font;
+	font-size: 1.2em;
+	color: $light-font;
+	display: inline-block;
+	background-color: $accent-color;
+	line-height: 40px;
+	height: 40px;
+	width: 80%;
+	border: 2px solid $accent-color;
+	border-radius: 20px;
+	&:hover {
+			color: $accent-color;
+			background-color: $light-font;
+	}
+}
+

@@ -1,0 +1,133 @@
+$accent-color: #21b4eb;
+$dark-accent-color: #02688e;
+$light-font: #ffffff;
+$dark-font: #222222;
+$light-grey: #f6f6f6;
+
+$main-font: 'Open Sans', sans-serif;
+$condenced-font: 'Open Sans Condensed', sans-serif;
+
+@mixin flex($direction, $main-align, $secondary-align) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $main-align;
+	align-items: $secondary-align;
+}
+
+@mixin font($family, $size, $weight, $line-height, $color) {
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $line-height;
+	color: $color;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-width: 320px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 62.5%;
+	line-height: 1.5;
+}
+
+section {
+	padding: 30px 20px;
+}
+
+#first { 
+	@include flex(column, center, center);
+	h1, h2 {
+		margin-bottom: 10px;
+	}
+	h1 {
+		@include font($main-font, 1.5em, 400, inherit, $dark-font);
+	}
+	h2 {
+		@include font($main-font, 1.1em, 600, inherit, $dark-font);
+	}
+}
+
+#second {
+	@include flex(column, flex-end, center);
+	min-height: 500px;
+	position: relative;
+	background-image: url("../images/hero_v.jpg");
+	background-size: cover;
+	#logo {
+		position: absolute;
+		top: 15px;
+		left: 20px;
+		width: 90px;
+		img {
+			width: 100%;
+		}
+		p {
+			@include font($main-font, 0.9em, 300, inherit, $light-font);
+			position: relative;
+			left: 7px;
+		}
+	}
+	h1, h2 {
+		margin-bottom: 10px;
+	}
+	h1 {
+		@include font($condenced-font, 2.2em, bold, 1.2, $light-font);
+		margin-bottom: 40px;
+	}
+	h2 {
+		@include font($condenced-font, 2.2em, 400, 1.2, $light-font);
+	}
+	.button {
+		margin-bottom: 20px;
+		width: 60%;
+	}
+}
+
+#third {
+	@include flex(column, center, center);
+	background-image: linear-gradient($dark-accent-color, $accent-color);
+	h1, h2, p {
+		margin-bottom: 10px;
+	}
+	h1 {
+		@include font($condenced-font, 1.9em, bold, 1.2, $light-font);
+		margin-top: 20px;
+	}
+	h2 {
+		@include font($main-font, 1.2em, bold, 1.5, $light-font);
+		margin-bottom: 0px;
+	}
+	p {
+		@include font($main-font, 1.2em, 400, 1.5, $light-font);
+	}
+
+	article {
+		@include flex (row, space-between, center);
+		&:nth-child(even){
+			flex-direction: row-reverse;
+		}
+		margin-bottom: 20px;
+		.mob {
+			display: block;
+			width: 38%;
+		}
+		.ico {
+			display: block;
+			width: 15%;
+		}
+		.article-text {
+			width: 38%;
+			text-align: left;
+		}
+	}
+}
+
+#fifth {
+	background-color: $light-grey;
+}
